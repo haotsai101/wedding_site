@@ -7,10 +7,9 @@ export const Nav = styled.ul`
 `;
 
 export const NavItem = styled.a`
-    float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1em 2em;
     text-decoration: none;
     font-size: 17px;
   
@@ -27,7 +26,7 @@ export const NavItem = styled.a`
 
 const Navbar = () => {
     return (
-        <Nav className='fixed w-full'>
+        <Nav className='fixed w-full flex justify-center'>
             <NavItem href='#gallery'>Gallery</NavItem>
             <NavItem href='#invitation'>Invitation</NavItem>
             <NavItem href='#registry'>Registry</NavItem>

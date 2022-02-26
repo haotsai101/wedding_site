@@ -16,7 +16,6 @@ function App() {
           <Gallery/>
           <Invitation/>
         </div>
-        <div className='h-96'/>
         <Registry/>
       </body>
     </div>
