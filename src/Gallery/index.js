@@ -1,10 +1,12 @@
 import React from 'react';
+import ImageSlider from './ImageSlider';
+import { SliderData } from './SliderData';
 
 const Gallery = () => {
     return (
-        <div className='h-96 pt-16'>
+        <div className='pt-16 w-screen'>
             <a id="gallery"/>
-            Gallery
+            <ImageSlider slides={SliderData} />
         </div>
     );
 };
