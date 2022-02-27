@@ -1,26 +1,26 @@
 import classNames from 'classnames';
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
+import frame from '../assets/flower-frame.jpeg'
 
-export const Nav = styled.ul`
-    background-color: black;
-    background-image: url('https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80');
+export const Nav = styled.div`
+    background-image: url(${frame});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 `;
 
 export const NavItem = styled.a`
-    //color: #ddd;
     text-align: center;
-    padding: 1em 2em;
+    padding: 0.5em 0.5em;
     text-decoration: none;
-    font-size: 17px;
-  
+    font-size: 1rem;
+    height: 2.5rem;
+    background: radial-gradient(#ffffffb3, rgba(255,0,0,0));
+    border-radius: 2rem;
+ 
     &:hover {
-        color: #f2f2f2;
-    }
-    
-    &:active {
-        background-color: #ddd;
-        color: black;
+        color: #404040;
     }
 `;
 
@@ -57,8 +57,9 @@ const Navbar = () => {
     }, [scrollDir]);
 
     return (
-        <Nav className={classNames('fixed w-screen flex justify-center z-50 h-80 transition ease-in-out duration-450',
+        <Nav className={classNames('fixed w-screen flex justify-evenly z-50 h-80 transition ease-in-out duration-450 px-16',
             scrollDir === 'up' ? 'translate-y-0' : '-translate-y-full')}>
+            
             <NavItem href='#gallery'>Gallery</NavItem>
             <NavItem href='#invitation'>Invitation</NavItem>
             <NavItem href='#registry'>Registry</NavItem>
