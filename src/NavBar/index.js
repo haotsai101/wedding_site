@@ -57,12 +57,22 @@ const Navbar = () => {
     }, [scrollDir]);
 
     return (
-        <Nav className={classNames('fixed w-screen flex justify-evenly z-50 h-80 transition ease-in-out duration-450 px-16',
+        <Nav className={classNames('fixed w-screen z-50 h-80 transition ease-in-out duration-450',
             scrollDir === 'up' ? 'translate-y-0' : '-translate-y-full')}>
-            
-            <NavItem href='#gallery'>Gallery</NavItem>
-            <NavItem href='#invitation'>Invitation</NavItem>
-            <NavItem href='#registry'>Registry</NavItem>
+            <div className='flex justify-center items-center w-screen h-72'>
+                <div>
+                    <h1 className='font-caveat font-black text-6xl'>Tina & Zhihao</h1>
+                    <p className='font-caveat text-2xl'>May 28th, 2022</p>
+                    <p className='font-caveat text-2xl'>Provo Utah</p>
+                </div>
+            </div>
+            <div className='absolute bottom-0 w-screen'>
+                <div className='flex justify-evenly align-bottom px-16'>
+                    <NavItem className='font-caveat' href='#gallery'>Gallery</NavItem>
+                    <NavItem className='font-caveat' href='#invitation'>Invitation</NavItem>
+                    <NavItem className='font-caveat' href='#registry'>Registry</NavItem>
+                </div>
+            </div>
         </Nav>
     )
 };
