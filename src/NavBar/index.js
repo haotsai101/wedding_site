@@ -1,4 +1,5 @@
-import React from 'react';
+import classNames from 'classnames';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 export const Nav = styled.ul`
@@ -7,31 +8,62 @@ export const Nav = styled.ul`
 `;
 
 export const NavItem = styled.a`
-    color: #f2f2f2;
+    //color: #ddd;
     text-align: center;
     padding: 1em 2em;
     text-decoration: none;
     font-size: 17px;
   
     &:hover {
-        background-color: #ddd;
-        color: black;
+        color: #f2f2f2;
     }
     
     &:active {
-        background-color: #04AA6D;
-        color: white;
+        background-color: #ddd;
+        color: black;
     }
 `;
 
 const Navbar = () => {
+    const [scrollDir, setScrollDir] = useState("up");
+
+    useEffect(() => {
+        const threshold = 0;
+        let lastScrollY = window.pageYOffset;
+        let ticking = false;
+
+        const updateScrollDir = () => {
+            const scrollY = window.pageYOffset;
+
+            if (Math.abs(scrollY - lastScrollY) < threshold) {
+            ticking = false;
+            return;
+            }
+            setScrollDir(scrollY > lastScrollY ? "down" : "up");
+            lastScrollY = scrollY > 0 ? scrollY : 0;
+            ticking = false;
+        };
+
+        const onScroll = () => {
+            if (!ticking) {
+            window.requestAnimationFrame(updateScrollDir);
+            ticking = true;
+            }
+        };
+
+        window.addEventListener("scroll", onScroll);
+
+        return () => window.removeEventListener("scroll", onScroll);
+    }, [scrollDir]);
+
     return (
-        <Nav className='w-screen flex justify-center z-50 h-80'>
+        <Nav className={classNames('fixed w-screen flex justify-center z-50 h-80 transition ease-in-out duration-450',
+            scrollDir === 'up' ? 'translate-y-0' : '-translate-y-full')}>
             <NavItem href='#gallery'>Gallery</NavItem>
             <NavItem href='#invitation'>Invitation</NavItem>
             <NavItem href='#registry'>Registry</NavItem>
         </Nav>
-    );
+    )
 };
 
 export default Navbar;
