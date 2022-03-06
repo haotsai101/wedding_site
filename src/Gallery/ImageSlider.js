@@ -18,8 +18,8 @@ const ImageSlider = ({ slides }) => {
   }
 
   return (
-    <section className='relative flex pt-16 justify-center'>
-      <FaArrowAltCircleLeft className='left-arrow m-auto ml-8 lg:ml-16' onClick={prevSlide} />
+    <section className='flex pt-16 justify-center'>
+      <FaArrowAltCircleLeft className='z-10 text-5xl text-black cursor-pointer select-none m-auto ml-8 lg:ml-12' onClick={prevSlide} />
       {slides.map((slide, index) => {
         return (
           <div
@@ -27,12 +27,16 @@ const ImageSlider = ({ slides }) => {
             key={index}
           >
             {index === current && (
-              <img src={slide.image} alt='travel image' className='inline-flex rounded-lg'/>
+              <img 
+                src={slide.image} 
+                alt='Tina and Zhihao in LOVE~' 
+                className='inline-flex rounded-lg max-h-[44rem]'
+              />
             )}
           </div>
         );
       })}
-      <FaArrowAltCircleRight className='right-arrow m-auto mr-8 lg:mr-16' onClick={nextSlide} />
+      <FaArrowAltCircleRight className='z-10 text-5xl text-black cursor-pointer select-none m-auto mr-8 lg:mr-12' onClick={nextSlide} />
     </section>
   );
 };
