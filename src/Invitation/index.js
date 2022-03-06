@@ -33,15 +33,15 @@ const Invitation = () => {
     }, []);
     
         return (
-        <div className='h-96 pt-16 font-caveat'>
+        <div className='h-96 pt-16'>
             <a id="invitation"/>
             <div className='mx-16 my-16 lg:mx-24 py-6 border-y-4 rounded-lg border-y-zinc-500'>
-                <div className='text-6xl font-bold'>Invitation</div>
-                <div className="text-4xl">Come Join Us In:</div>
-                <div className="text-2xl">{leading0(days)} Days</div>
-                <div className="text-2xl">{leading0(hours)} Hours</div>
-                <div className="text-2xl">{leading0(minutes)} Minutes</div>
-                <div className="text-2xl">{leading0(seconds)} Seconds</div>
+                <div className='text-6xl font-bold'>Come Join Us In:</div>
+                <div className="text-4xl"></div>
+                <div className="text-4xl">{leading0(days)} Days</div>
+                <div className="text-4xl">{leading0(hours)} Hours</div>
+                <div className="text-4xl">{leading0(minutes)} Minutes</div>
+                <div className="text-4xl">{leading0(seconds)} Seconds</div>
             </div>
         </div>
     );
