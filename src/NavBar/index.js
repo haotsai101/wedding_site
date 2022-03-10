@@ -26,6 +26,7 @@ export const NavItem = styled.a`
 
 const Navbar = () => {
     const [scrollDir, setScrollDir] = useState("up");
+    const [toggled, setToggled] = useState(false);
 
     useEffect(() => {
         const threshold = 0;
@@ -56,13 +57,9 @@ const Navbar = () => {
         return () => window.removeEventListener("scroll", onScroll);
     }, [scrollDir]);
 
-    const toggleNav = () => {
-        scrollDir=="up" ? setScrollDir('down') : setScrollDir('up')
-    }
-
     return (
         <Nav className={classNames('fixed w-screen z-50 h-80 transition ease-in-out duration-450',
-            scrollDir === 'up' ? 'translate-y-0' : '-translate-y-64')}>
+            scrollDir === 'down' || toggled ? '-translate-y-64' : 'translate-y-0')}>
             <div className='flex justify-center items-center w-screen h-72'>
                 <div>
                     <h1 className='font-black text-6xl'>Tina & Zhihao</h1>
@@ -75,8 +72,8 @@ const Navbar = () => {
                     <NavItem href='#gallery'>Gallery</NavItem>
                     <NavItem href='#invitation'>Invitation</NavItem>
                     <NavItem href='#registry'>Registry</NavItem>
-                    <NavItem onClick={toggleNav}>
-                        { scrollDir=="up" ? "Hide" : "Show" }
+                    <NavItem onClick={() => setToggled(!toggled)}>
+                        { !toggled ? "Hide" : "Show" }
                     </NavItem>
                 </div>
             </div>
