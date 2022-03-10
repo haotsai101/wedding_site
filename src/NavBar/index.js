@@ -72,7 +72,10 @@ const Navbar = () => {
                     <NavItem href='#gallery'>Gallery</NavItem>
                     <NavItem href='#invitation'>Invitation</NavItem>
                     <NavItem href='#registry'>Registry</NavItem>
-                    <NavItem onClick={() => setToggled(!toggled)}>
+                    <NavItem onClick={() => {
+                        setToggled(!toggled)
+                        setScrollDir("up")
+                    }}>
                         { !toggled ? "Hide" : "Show" }
                     </NavItem>
                 </div>
