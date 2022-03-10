@@ -18,26 +18,45 @@ const ImageSlider = ({ slides }) => {
   }
 
   return (
-    <section className='flex pt-16 justify-center'>
-      <FaArrowAltCircleLeft className='z-10 text-5xl text-black cursor-pointer select-none m-auto ml-8 lg:ml-12' onClick={prevSlide} />
-      {slides.map((slide, index) => {
-        return (
-          <div
-            className={index === current ? 'slide active' : 'slide'}
-            key={index}
-          >
-            {index === current && (
-              <img 
-                src={slide.image} 
-                alt='Tina and Zhihao in LOVE~' 
-                className='inline-flex rounded-lg max-h-[44rem]'
-              />
-            )}
-          </div>
-        );
-      })}
-      <FaArrowAltCircleRight className='z-10 text-5xl text-black cursor-pointer select-none m-auto mr-8 lg:mr-12' onClick={nextSlide} />
-    </section>
+    <div>
+      <section className='flex pt-16 justify-center'>
+        <FaArrowAltCircleLeft className='z-10 text-5xl text-black cursor-pointer select-none m-auto ml-8 lg:ml-12' onClick={prevSlide} />
+        {slides.map((slide, index) => {
+          return (
+            <div
+              className={index === current ? 'opacity-100 duration-1000 ease-in-out' : 'duration-1000 opacity-0 scale-90'}
+              key={index}
+            >
+              {index === current && (
+                <img 
+                  src={slide.image} 
+                  alt='Tina and Zhihao in LOVE~' 
+                  className='inline-flex rounded-lg max-h-[40rem]'
+                />
+              )}
+            </div>
+          );
+        })}
+        <FaArrowAltCircleRight className='z-10 text-5xl text-black cursor-pointer select-none m-auto mr-8 lg:mr-12' onClick={nextSlide} />
+      </section>
+      <section className='flex mt-10 mx-8'>
+        {slides.map((slide, index) => {
+            return (
+              <div
+                className={index === current ? 'scale-110 duration-300 ease-in-out z-10' : 'scale-90'}
+                key={index + 10}
+              >
+                <img 
+                  src={slide.image} 
+                  alt='Tina and Zhihao in LOVE~' 
+                  className='rounded-lg max-h-96'
+                  onClick={() => setCurrent(index)}
+                />
+              </div>
+            );
+          })}
+      </section>
+    </div>
   );
 };
 
