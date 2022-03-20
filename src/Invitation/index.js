@@ -1,47 +1,41 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import roadtripImg from './../assets/roadtrip.jpeg'
+import incarImg from './../assets/incar.jpeg'
+import adventureImg from './../assets/adventure.jpeg'
 
 const Invitation = () => {
-    const [days, setDays] = useState(0);
-    const [hours, setHours] = useState(0);
-    const [minutes, setMinutes] = useState(0);
-    const [seconds, setSeconds] = useState(0);
-  
-    const theBigDay = '28 May 2022 10:00:00 MST'
-    const leading0 = (num) => {
-        return num < 10 ? "0" + num : num;
-    };
-    
-    const getTimeUntil = (theBigDay) => {
-        const time = Date.parse(theBigDay) - Date.parse(new Date());
-        if (time < 0) {
-            setDays(0);
-            setHours(0);
-            setMinutes(0);
-            setSeconds(0);
-        } else {
-            setDays(Math.floor(time / (1000 * 60 * 60 * 24)));
-            setHours(Math.floor((time / (1000 * 60 * 60)) % 24));
-            setMinutes(Math.floor((time / 1000 / 60) % 60));
-            setSeconds(Math.floor((time / 1000) % 60));
-        }
-    };
-    
-    useEffect(() => {
-        setInterval(() => getTimeUntil(theBigDay), 1000);
-    
-        return () => getTimeUntil(theBigDay);
-    }, []);
-    
         return (
-        <div className='h-96 pt-16'>
+        <div className='border-y-4 rounded-lg border-y-zinc-900 mt-16 mx-8 lg:mx-24'>
             <a id="invitation"/>
-            <div className='mx-16 my-16 lg:mx-24 py-6 border-y-4 rounded-lg border-y-zinc-500'>
-                <div className='text-6xl font-bold'>Come Join Us In:</div>
-                <div className="text-4xl"></div>
-                <div className="text-4xl">{leading0(days)} Days</div>
-                <div className="text-4xl">{leading0(hours)} Hours</div>
-                <div className="text-4xl">{leading0(minutes)} Minutes</div>
-                <div className="text-4xl">{leading0(seconds)} Seconds</div>
+                <div>
+                <div className='text-6xl font-bold mt-16'>Our Stories</div>
+                <div className='flex mt-16'>
+                    <div 
+                        className='w-full shadow-2xl lg:text-6xl px-2 py-6 lg:py-24'
+                    >I used to like solo trips until our first road trip together</div>
+                    <img 
+                        className='w-1/2'
+                        src={roadtripImg} 
+                    />
+                </div>
+                <div className='flex mt-16'>
+                    <img 
+                        className='w-1/2'
+                        src={incarImg} 
+                    />
+                    <div 
+                        className='w-full shadow-2xl lg:text-6xl px-2 py-12 lg:py-56'
+                    >It’s so much better when you get to sing and laugh in the car with your love</div>
+                </div>
+                <div className='flex my-16'>
+                    <div 
+                        className='w-full shadow-2xl lg:text-6xl px-2 py-6 lg:py-24'
+                    >“As soon as I saw you, I knew you would be an adventure of a lifetime.” —Winnie the Pooh</div>
+                    <img 
+                        className='w-1/2'
+                        src={adventureImg} 
+                    />
+                </div>
             </div>
         </div>
     );
