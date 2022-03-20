@@ -34,12 +34,20 @@ const Footer = () => {
     }, []);
     
     return (
-        <div className='py-32 m-12 footer'>
-            <div className='text-4xl font-bold '>Come Join Us In:</div>
-            <div className="text-2xl ">{leading0(days)} Days</div>
-            <div className="text-2xl ">{leading0(hours)} Hours</div>
-            <div className="text-2xl ">{leading0(minutes)} Minutes</div>
-            <div className="text-2xl ">{leading0(seconds)} Seconds</div>            
+        <div className='py-32 m-12 lg:mx-32 xl:mx-64 lg:py-48 footer lg:flex lg:justify-evenly'>
+            <div>
+                <div className='text-4xl xl:text-6xl font-bold '>Come Join Us In:</div>
+                <div className="text-2xl xl:text-4xl">{leading0(days)} Days</div>
+                <div className="text-2xl xl:text-4xl">{leading0(hours)} Hours</div>
+                <div className="text-2xl xl:text-4xl">{leading0(minutes)} Minutes</div>
+                <div className="text-2xl xl:text-4xl">{leading0(seconds)} Seconds</div>            
+            </div>
+            <div>
+                <div className='text-4xl xl:text-6xl font-bold '>May 28th 2022</div>
+                <div className="text-2xl xl:text-4xl">10 am</div>
+                <div className="text-2xl xl:text-4xl">Manavu Chapel</div>
+                <div className="text-2xl xl:text-4xl">395 E 600 N, Provo, UT 84606</div>
+            </div>
         </div>
     );
 };
