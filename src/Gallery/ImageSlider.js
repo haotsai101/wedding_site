@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+import { SliderData as slides } from './SliderData';
 
-const ImageSlider = ({ slides }) => {
+const ImageSlider = () => {
   const [current, setCurrent] = useState(0);
+  if (!Array.isArray(slides) || slides.length <= 0) {
+    return null;
+  }
   const length = slides.length;
 
   const nextSlide = () => {
@@ -12,10 +16,6 @@ const ImageSlider = ({ slides }) => {
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
-
-  if (!Array.isArray(slides) || slides.length <= 0) {
-    return null;
-  }
 
   return (
     <div>

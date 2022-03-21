@@ -29,7 +29,7 @@ const Navbar = () => {
     const [toggled, setToggled] = useState(false);
 
     useEffect(() => {
-        const threshold = 0;
+        const threshold = 100;
         let lastScrollY = window.pageYOffset;
         let ticking = false;
 
@@ -37,8 +37,8 @@ const Navbar = () => {
             const scrollY = window.pageYOffset;
 
             if (Math.abs(scrollY - lastScrollY) < threshold) {
-            ticking = false;
-            return;
+                ticking = false;
+                return;
             }
             setScrollDir(scrollY > lastScrollY ? "down" : "up");
             lastScrollY = scrollY > 0 ? scrollY : 0;

@@ -1,10 +1,11 @@
 import './App.css';
 import Gallery from './Gallery';
-import Invitation from './Invitation';
+import Trips from './Trips';
 import Navbar from './NavBar';
 import Registry from './Registry';
-import Footer from './Footer';
+import Invitation from './Invitation';
 import { Helmet } from 'react-helmet'
+import React from 'react';
 
 function App() {
   const TITLE = 'Tina and Ty Getting Married!!'
@@ -13,17 +14,17 @@ function App() {
       <Helmet>
         <title>{ TITLE }</title>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
         <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet"/>
       </Helmet>
-        <body className='App font-caveat'>
+      <body className='App font-caveat '>
         <Navbar/>        
-        <div>
+        <div className='divide-y-4'>
           <Gallery/>
           <Invitation/>
+          <Registry/>
+          <Trips/>
         </div>
-        <Registry/>
-        <Footer/>
       </body>
     </div>
   );
