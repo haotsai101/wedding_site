@@ -6,7 +6,7 @@ import adventureImg from './../assets/adventure.jpeg'
 const Trips = () => {
         return (
         <div className='mt-16 mx-8 lg:mx-24'>
-            <a id="invitation"/>
+            <a id="trips"/>
             <div>
                 <div className='text-6xl font-bold mt-16'>Our Stories</div>
                 <div className='flex mt-16'>

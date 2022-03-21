@@ -25,41 +25,30 @@ export const NavItem = styled.a`
 `;
 
 const Navbar = () => {
-    const [scrollDir, setScrollDir] = useState("up");
     const [toggled, setToggled] = useState(false);
 
     useEffect(() => {
-        const threshold = 100;
         let lastScrollY = window.pageYOffset;
-        let ticking = false;
 
         const updateScrollDir = () => {
             const scrollY = window.pageYOffset;
 
-            if (Math.abs(scrollY - lastScrollY) < threshold) {
-                ticking = false;
-                return;
-            }
-            setScrollDir(scrollY > lastScrollY ? "down" : "up");
-            lastScrollY = scrollY > 0 ? scrollY : 0;
-            ticking = false;
+            if (scrollY > lastScrollY) setToggled(true)
+            if (scrollY == 0) setToggled(false)
         };
 
         const onScroll = () => {
-            if (!ticking) {
             window.requestAnimationFrame(updateScrollDir);
-            ticking = true;
-            }
         };
 
         window.addEventListener("scroll", onScroll);
 
         return () => window.removeEventListener("scroll", onScroll);
-    }, [scrollDir]);
+    }, [toggled]);
 
     return (
         <Nav className={classNames('fixed w-screen z-50 h-80 transition ease-in-out duration-450',
-            scrollDir === 'down' || toggled ? '-translate-y-64' : 'translate-y-0')}>
+            toggled ? '-translate-y-64' : 'translate-y-0')}>
             <div className='flex justify-center items-center w-screen h-72'>
                 <div>
                     <h1 className='font-black text-6xl'>Tina & Zhihao</h1>
@@ -72,12 +61,7 @@ const Navbar = () => {
                     <NavItem href='#gallery'>Gallery</NavItem>
                     <NavItem href='#invitation'>Invitation</NavItem>
                     <NavItem href='#registry'>Registry</NavItem>
-                    <NavItem onClick={() => {
-                        setToggled(!toggled)
-                        setScrollDir("up")
-                    }}>
-                        { !toggled ? "Hide" : "Show" }
-                    </NavItem>
+                    <NavItem href='#trips'>Trips</NavItem>
                 </div>
             </div>
         </Nav>
