@@ -46,7 +46,7 @@ const Invitation = () => {
                 </div>
                 <div>
                     <div className='text-4xl xl:text-6xl font-bold '>May 28th 2022</div>
-                    <div className="text-2xl xl:text-4xl">10 am</div>
+                    <div className="text-2xl xl:text-4xl">10 am, MDT</div>
                     <div className="text-2xl xl:text-4xl">Manavu Chapel</div>
                     <div className="text-2xl xl:text-4xl">395 E 600 N, Provo, UT 84606</div>
                 </div>
