@@ -6,6 +6,7 @@ import Jan20Img from './../assets/Bryce_Jan_2020.jpg'
 import Feb20Img from './../assets/Zion_Fed_2020.jpg'
 import April20Img from './../assets/BYU_April_2020.jpg'
 import Aug20Img from './../assets/Nauvoo_Aug_2020.jpg'
+import Dec20Img from './../assets/Provo_Dec_2020.jpg'
 import July21Img from './../assets/George_July_2021.jpg'
 import June21Img from './../assets/Lafayette_June_2021.jpeg'
 import Nov21Img from './../assets/Chicago_Nov_2021.jpg'
@@ -73,10 +74,28 @@ const Trips = () => {
                 <div className='flex mt-16'>
                     <div 
                         className='w-full shadow-2xl md:text-4xl md:pt-24 lg:text-6xl px-2 pt-6 lg:px-12'
-                    >Nauvoo Temple, Illinois, Aug. 2020</div>
+                    >Provo, Utah, Dec. 2020</div>
+                    <img 
+                        className='w-1/2'
+                        src={Dec20Img} 
+                    />
+                </div>
+                <div className='flex mt-16'>
                     <img 
                         className='w-1/2'
                         src={Aug20Img} 
+                    />
+                    <div 
+                        className='w-full shadow-2xl md:text-4xl md:pt-32 lg:text-6xl px-2 pt-12 lg:px-20'
+                    >Nauvoo Temple, Illinois, Aug. 2020</div>
+                </div>
+                <div className='flex my-16'>
+                    <div 
+                        className='w-full shadow-2xl md:text-4xl md:pt-24 lg:text-6xl px-2 pt-6 lg:px-12'
+                    >West Lafayette, Indiana, Jun. 2021</div>
+                    <img 
+                        className='w-1/2'
+                        src={June21Img} 
                     />
                 </div>
                 <div className='flex mt-16'>
@@ -91,20 +110,11 @@ const Trips = () => {
                 <div className='flex my-16'>
                     <div 
                         className='w-full shadow-2xl md:text-4xl md:pt-24 lg:text-6xl px-2 pt-6 lg:px-12'
-                    >Lafayette, Indiana, Jun. 2021</div>
-                    <img 
-                        className='w-1/2'
-                        src={June21Img} 
-                    />
-                </div>
-                <div className='flex mt-16'>
+                    >Chicago, Illinois, Nov. 2021</div>
                     <img 
                         className='w-1/2'
                         src={Nov21Img} 
                     />
-                    <div 
-                        className='w-full shadow-2xl md:text-4xl md:pt-32 lg:text-6xl px-2 pt-12 lg:px-20'
-                    >Chicago, Illinois, Nov. 2021</div>
                 </div>
                 <div className='flex my-16'>
                     <div 

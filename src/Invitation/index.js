@@ -36,7 +36,7 @@ const Invitation = () => {
     return (
         <div className='py-16 mx-8 lg:mx-24'>
             <a id="invitation"/>
-            <div className='mx-4 lg:mx-8 xl:mx-64 lg:py-48 footer lg:flex lg:justify-evenly'>
+            <div className='mx-4 lg:mx-8 xl:mx-20 lg:py-48 footer md:flex md:justify-evenly py-32'>
                 <div>
                     <div className='text-4xl xl:text-6xl font-bold '>Come Join Us In:</div>
                     <div className="text-2xl xl:text-4xl">{leading0(days)} Days</div>
