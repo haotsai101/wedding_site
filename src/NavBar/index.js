@@ -61,7 +61,7 @@ const Navbar = () => {
                     <NavItem href='#gallery'>Gallery</NavItem>
                     <NavItem href='#invitation'>Invitation</NavItem>
                     <NavItem href='#registry'>Registry</NavItem>
-                    <NavItem href='#trips'>Trips</NavItem>
+                    <NavItem href='#trips'>Stories</NavItem>
                 </div>
             </div>
         </Nav>

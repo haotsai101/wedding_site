@@ -18,7 +18,7 @@ const Trips = () => {
                 <div className='text-6xl font-bold mt-16'>Our Stories</div>
                 <div className='flex mt-16'>
                     <div 
-                        className='w-full shadow-2xl md:text-3xl md:pt-20 lg:text-5xl px-2 pt-8 lg:px-12'
+                        className='w-full shadow-2xl md:text-3xl md:pt-20 px-2 pt-8 lg:px-12'
                     >I used to like solo trips until our first road trip together</div>
                     <img 
                         className='w-1/2 min-h-full'
@@ -31,12 +31,12 @@ const Trips = () => {
                         src={incarImg} 
                     />
                     <div 
-                        className='w-full shadow-2xl md:text-3xl md:pt-32 lg:text-5xl px-2 pt-12 lg:px-20'
+                        className='w-full shadow-2xl md:text-3xl md:pt-32 px-2 pt-12 lg:px-20'
                     >It’s so much better when you get to sing and laugh in the car with your love</div>
                 </div>
                 <div className='flex my-16'>
                     <div 
-                        className='w-full shadow-2xl md:text-3xl md:pt-24 lg:text-5xl px-2 pt-6 lg:px-12'
+                        className='w-full shadow-2xl md:text-3xl md:pt-24 px-2 pt-6 lg:px-12'
                     >“As soon as I saw you, I knew you would be an adventure of a lifetime.” —Winnie the Pooh</div>
                     <img 
                         className='w-1/2'
