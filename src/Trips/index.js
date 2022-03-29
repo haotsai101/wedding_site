@@ -30,7 +30,7 @@ const Trips = () => {
                         />
                         </div>
                     <div
-                        className='w-full shadow-2xl md:text-3xl pt-3 md:pt-16 lg:pt-24 px-2 md:px-4 lg:px-12'
+                        className='w-full shadow-2xl md:text-3xl pt-6 md:pt-16 lg:pt-24 px-2 md:px-4 lg:px-12'
                     >It’s so much better when you get to sing and laugh in the car with your love</div>
                 </div>
                 <div className='flex my-16'>
