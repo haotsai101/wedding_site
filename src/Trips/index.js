@@ -41,10 +41,12 @@ const Trips = () => {
                     if (index % 2 == 0) {
                         return (
                             <div className='flex mt-16'>
-                                <img 
-                                    className='w-1/2 h-auto'
-                                    src={data.image} 
-                                />
+                                <div className='w-full'>
+                                    <img 
+                                        className='w-auto h-auto'
+                                        src={data.image} 
+                                    />
+                                </div>
                                 <div 
                                     className='w-full shadow-2xl md:text-4xl pt-6 md:pt-16 lg:pt-24 px-2 md:px-4 lg:px-12'
                                 >{data.description}</div>
@@ -56,10 +58,12 @@ const Trips = () => {
                                 <div 
                                     className='w-full shadow-2xl md:text-4xl pt-6 md:pt-16 lg:pt-24 px-2 md:px-4 lg:px-12'
                                 >{data.description}</div>
-                                <img 
-                                    className='w-1/2 h-auto'
-                                    src={data.image} 
-                                />
+                                <div className='w-full'>
+                                    <img 
+                                        className='w-auto h-auto'
+                                        src={data.image} 
+                                    />
+                                </div>
                             </div>
                         )
                     }
