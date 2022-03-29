@@ -10,6 +10,7 @@ import Dec20Img from './../assets/Provo_Dec_2020.jpg'
 import July21Img from './../assets/George_July_2021.jpg'
 import June21Img from './../assets/Lafayette_June_2021.jpeg'
 import Nov21Img from './../assets/Chicago_Nov_2021.jpg'
+import Jan22Img from './../assets/Surf_Jan_2022.jpg'
 
 const Trips = () => {
         return (
@@ -115,6 +116,15 @@ const Trips = () => {
                         className='w-1/2'
                         src={Nov21Img} 
                     />
+                </div>
+                <div className='flex mt-16'>
+                    <img 
+                        className='w-1/2'
+                        src={Jan22Img} 
+                    />
+                    <div 
+                        className='w-full shadow-2xl md:text-4xl md:pt-32 lg:text-6xl px-2 pt-12 lg:px-20'
+                    >Surfside, Texas, Jan. 2022</div>
                 </div>
                 <div className='flex my-16'>
                     <div 

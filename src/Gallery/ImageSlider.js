@@ -19,7 +19,7 @@ const ImageSlider = () => {
 
   return (
     <div>
-      <section className='flex pt-16 justify-center'>
+      <section className='flex pt-24 justify-center'>
         <FaArrowAltCircleLeft className='z-10 text-5xl text-black cursor-pointer select-none m-auto ml-8 lg:ml-12' onClick={prevSlide} />
         {slides.map((slide, index) => {
           return (
