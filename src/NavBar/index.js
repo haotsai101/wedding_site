@@ -52,7 +52,7 @@ const Navbar = () => {
             <div className='flex justify-center items-center w-screen h-72'>
                 <div>
                     <h1 className='font-black text-6xl'>Tina & Zhihao</h1>
-                    <p className='text-2xl'>May 28th, 2022</p>
+                    <p className='text-2xl'>May 28, 2022</p>
                     <p className='text-2xl'>Provo Utah</p>
                 </div>
             </div>

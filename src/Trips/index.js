@@ -75,20 +75,20 @@ const Trips = () => {
                 <div className='flex mt-16'>
                     <div 
                         className='w-full shadow-2xl md:text-4xl md:pt-24 lg:text-6xl px-2 pt-6 lg:px-12'
-                    >Provo, Utah, Dec. 2020</div>
+                    >Nauvoo Temple, Illinois, Aug. 2020</div>
                     <img 
                         className='w-1/2'
-                        src={Dec20Img} 
+                        src={Aug20Img} 
                     />
                 </div>
                 <div className='flex mt-16'>
                     <img 
                         className='w-1/2'
-                        src={Aug20Img} 
+                        src={Dec20Img} 
                     />
                     <div 
                         className='w-full shadow-2xl md:text-4xl md:pt-32 lg:text-6xl px-2 pt-12 lg:px-20'
-                    >Nauvoo Temple, Illinois, Aug. 2020</div>
+                    >Provo, Utah, Dec. 2020</div>
                 </div>
                 <div className='flex my-16'>
                     <div 
