@@ -16,13 +16,13 @@ const Trips = () => {
                         className='w-full shadow-2xl md:text-3xl pt-6 md:pt-16 lg:pt-24 px-2 md:px-4 lg:px-12'
                     >I used to like solo trips until our first road trip together</div>
                     <img 
-                        className='w-1/2 h-auto min-h-full'
+                        className='w-auto h-auto'
                         src={roadtripImg} 
                     />
                 </div>
                 <div className='flex mt-16'>
                     <img 
-                        className='w-1/2 h-auto'
+                        className='w-auto h-auto'
                         src={incarImg} 
                     />
                     <div 
@@ -33,7 +33,7 @@ const Trips = () => {
                         className='w-full shadow-2xl md:text-3xl pt-3 md:pt-16 lg:pt-24 px-2 md:px-4 lg:px-12'
                     >“As soon as I saw you, I knew you would be an adventure of a lifetime.” —Winnie the Pooh</div>
                     <img 
-                        className='w-1/2 h-auto'
+                        className='w-auto h-auto'
                         src={adventureImg} 
                     />
                 </div>
