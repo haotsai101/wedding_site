@@ -13,7 +13,7 @@ const Trips = () => {
                 <div className='text-6xl font-bold mt-16'>Our Stories</div>
                 <div className='flex mt-16'>
                     <div 
-                        className='shadow-2xl md:text-3xl pt-6 md:pt-16 lg:pt-24 px-2 md:px-4 lg:px-12'
+                        className='w-full shadow-2xl md:text-3xl pt-6 md:pt-16 lg:pt-24 px-2 md:px-4 lg:px-12'
                     >I used to like solo trips until our first road trip together</div>
                     <img 
                         className='w-1/2 h-auto min-h-full'
@@ -26,12 +26,11 @@ const Trips = () => {
                         src={incarImg} 
                     />
                     <div 
-                        className='shadow-2xl md:text-3xl pt-6 md:pt-16 lg:pt-24 px-2 md:px-4 lg:px-12'
                     >It’s so much better when you get to sing and laugh in the car with your love</div>
                 </div>
                 <div className='flex my-16'>
                     <div 
-                        className='shadow-2xl md:text-3xl pt-3 md:pt-16 lg:pt-24 px-2 md:px-4 lg:px-12'
+                        className='w-full shadow-2xl md:text-3xl pt-3 md:pt-16 lg:pt-24 px-2 md:px-4 lg:px-12'
                     >“As soon as I saw you, I knew you would be an adventure of a lifetime.” —Winnie the Pooh</div>
                     <img 
                         className='w-1/2 h-auto'
@@ -47,7 +46,7 @@ const Trips = () => {
                                     src={data.image} 
                                 />
                                 <div 
-                                    className='shadow-2xl md:text-4xl pt-6 md:pt-16 lg:pt-24 px-2 md:px-4 lg:px-12'
+                                    className='w-full shadow-2xl md:text-4xl pt-6 md:pt-16 lg:pt-24 px-2 md:px-4 lg:px-12'
                                 >{data.description}</div>
                             </div>
                         )
@@ -55,7 +54,7 @@ const Trips = () => {
                         return (
                             <div className='flex mt-16'>
                                 <div 
-                                    className='shadow-2xl md:text-4xl pt-6 md:pt-16 lg:pt-24 px-2 md:px-4 lg:px-12'
+                                    className='w-full shadow-2xl md:text-4xl pt-6 md:pt-16 lg:pt-24 px-2 md:px-4 lg:px-12'
                                 >{data.description}</div>
                                 <img 
                                     className='w-1/2 h-auto'
