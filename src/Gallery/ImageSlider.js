@@ -10,12 +10,31 @@ const ImageSlider = () => {
   const length = slides.length;
 
   const nextSlide = () => {
+    disableScroll()
     setCurrent(current === length - 1 ? 0 : current + 1);
+    enableScroll()
   };
 
   const prevSlide = () => {
+    disableScroll()
     setCurrent(current === 0 ? length - 1 : current - 1);
+    enableScroll()
   };
+
+  function disableScroll() {
+    // Get the current page scroll position
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop
+    var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft
+  
+    // if any scroll is attempted, set this to the previous value
+    window.onscroll = function() {
+      window.scrollTo(scrollLeft, scrollTop);
+    };
+  }
+    
+  function enableScroll() {
+    window.onscroll = function() {};
+  }
 
   return (
     <div>

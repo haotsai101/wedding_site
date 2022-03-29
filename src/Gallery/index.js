@@ -3,7 +3,7 @@ import ImageSlider from './ImageSlider';
 
 const Gallery = () => {
     return (
-        <div className='pt-40 pb-16'>
+        <div className='pt-24 pb-16'>
             <a id="gallery"/>
             <ImageSlider />
         </div>

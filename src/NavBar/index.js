@@ -32,9 +32,7 @@ const Navbar = () => {
 
         const updateScrollDir = () => {
             const scrollY = window.pageYOffset;
-
-            if (scrollY > lastScrollY) setToggled(true)
-            if (scrollY == 0) setToggled(false)
+            setToggled(scrollY > 0)
         };
 
         const onScroll = () => {
