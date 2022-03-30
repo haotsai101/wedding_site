@@ -30,11 +30,11 @@ export const ImageData = [
     description: 'Provo, Utah, Dec. 2020',
   },
   {
-    image: July21Img,
-    description: 'West Lafayette, Indiana, Jun. 2021',
+    image: June21Img,
+    description: 'West Lafayette, Indiana, Apr. 2021',
   },
   {
-    image: June21Img,
+    image: July21Img,
     description: 'Red Cliff, Utah, Aug. 2021',
   },
   {
