@@ -7,7 +7,7 @@ const Invitation = () => {
     const [minutes, setMinutes] = useState(0);
     const [seconds, setSeconds] = useState(0);
   
-    const theBigDay = '28 May 2022 10:00:00 MST'
+    const theBigDay = '28 May 2022 11:00:00 MDT'
     const leading0 = (num) => {
         return num < 10 ? "0" + num : num;
     };
