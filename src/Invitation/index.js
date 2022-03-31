@@ -7,7 +7,7 @@ const Invitation = () => {
     const [minutes, setMinutes] = useState(0);
     const [seconds, setSeconds] = useState(0);
   
-    const theBigDay = '28 May 2022 10:00:00 MST'
+    const theBigDay = '7 May 2022 15:00:00 EDT'
     const leading0 = (num) => {
         return num < 10 ? "0" + num : num;
     };
@@ -45,10 +45,10 @@ const Invitation = () => {
                     <div className="text-2xl xl:text-4xl">{leading0(seconds)} Seconds</div>            
                 </div>
                 <div>
-                    <div className='text-4xl xl:text-6xl font-bold '>May 28, 2022</div>
-                    <div className="text-2xl xl:text-4xl">11 am, MDT</div>
-                    <div className="text-2xl xl:text-4xl">Manavu Chapel</div>
-                    <div className="text-2xl xl:text-4xl">395 E 600 N, Provo, UT 84606</div>
+                    <div className='text-4xl xl:text-6xl font-bold '>May 7, 2022</div>
+                    <div className="text-2xl xl:text-4xl">3 - 5 pm, EDT</div>
+                    <div className="text-2xl xl:text-4xl">Lafayette YSA Ward</div>
+                    <div className="text-2xl xl:text-4xl">Bishop's Place</div>
                 </div>
             </div>
 
