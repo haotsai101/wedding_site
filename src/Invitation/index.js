@@ -47,8 +47,8 @@ const Invitation = () => {
                 <div>
                     <div className='text-4xl xl:text-6xl font-bold '>May 7, 2022</div>
                     <div className="text-2xl xl:text-4xl">3 - 5 pm, EDT</div>
-                    <div className="text-2xl xl:text-4xl">Lafayette YSA Ward</div>
-                    <div className="text-2xl xl:text-4xl">Bishop's Place</div>
+                    <div className="text-2xl xl:text-4xl">1515 Ravinia Road</div>
+                    <div className="text-2xl xl:text-4xl">West Lafayette, IN</div>
                 </div>
             </div>
         </div>
