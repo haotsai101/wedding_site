@@ -51,13 +51,14 @@ const Navbar = () => {
                 <div>
                     <h1 className='font-black text-6xl'>Tina & Zhihao</h1>
                     <p className='text-2xl'>May 28, 2022</p>
-                    <p className='text-2xl'>Provo Utah</p>
+                    <p className='text-2xl'>Provo, Utah</p>
                 </div>
             </div>
             <div className='absolute bottom-0 w-screen'>
                 <div className='flex justify-evenly align-bottom px-16'>
                     <NavItem href='#gallery'>Gallery</NavItem>
                     <NavItem href='#invitation'>Invitation</NavItem>
+                    <NavItem href='#rsvp'>RSVP</NavItem>
                     <NavItem href='#registry'>Registry</NavItem>
                     <NavItem href='#trips'>Stories</NavItem>
                 </div>

@@ -51,7 +51,6 @@ const Invitation = () => {
                     <div className="text-2xl xl:text-4xl">395 E 600 N, Provo, UT 84606</div>
                 </div>
             </div>
-
         </div>
     );
 };
