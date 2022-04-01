@@ -58,6 +58,7 @@ const Navbar = () => {
                 <div className='flex justify-evenly align-bottom px-16'>
                     <NavItem href='#gallery'>Gallery</NavItem>
                     <NavItem href='#invitation'>Invitation</NavItem>
+                    <NavItem href='#rsvp'>RSVP</NavItem>
                     <NavItem href='#registry'>Registry</NavItem>
                     <NavItem href='#trips'>Stories</NavItem>
                 </div>

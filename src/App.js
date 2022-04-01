@@ -6,6 +6,7 @@ import Registry from './Registry';
 import Invitation from './Invitation';
 import { Helmet } from 'react-helmet'
 import React from 'react';
+import RSVP from './RSVP';
 
 function App() {
   const TITLE = 'Tina and Ty Getting Married!!'
@@ -22,6 +23,7 @@ function App() {
         <div className='divide-y-4'>
           <Gallery/>
           <Invitation/>
+          <RSVP/>
           <Registry/>
           <Trips/>
         </div>

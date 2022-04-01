@@ -51,7 +51,6 @@ const Invitation = () => {
                     <div className="text-2xl xl:text-4xl">Bishop's Place</div>
                 </div>
             </div>
-
         </div>
     );
 };
