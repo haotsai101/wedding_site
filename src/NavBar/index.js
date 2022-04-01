@@ -51,7 +51,7 @@ const Navbar = () => {
                 <div>
                     <h1 className='font-black text-6xl'>Tina & Zhihao</h1>
                     <p className='text-2xl'>May 28, 2022</p>
-                    <p className='text-2xl'>West Lafayette, Indiana</p>
+                    <p className='text-2xl'>Provo, Utah</p>
                 </div>
             </div>
             <div className='absolute bottom-0 w-screen'>
