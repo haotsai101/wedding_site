@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/wedding_site/static/css/main.9bf98bfd.css",
+    "main.js": "/wedding_site/static/js/main.96697e63.js",
+    "static/js/787.b444d40d.chunk.js": "/wedding_site/static/js/787.b444d40d.chunk.js",
+    "static/media/incar.jpeg": "/wedding_site/static/media/incar.9cf26af72fa0d2b49200.jpeg",
+    "static/media/flower-frame.jpeg": "/wedding_site/static/media/flower-frame.a4b604917028f12f549c.jpeg",
+    "static/media/site-background.jpeg": "/wedding_site/static/media/site-background.5890fbc2f63126f8b2fb.jpeg",
+    "static/media/adventure.jpeg": "/wedding_site/static/media/adventure.3c63778d0af5a148a7eb.jpeg",
+    "static/media/roadtrip.jpeg": "/wedding_site/static/media/roadtrip.14338762ce26d90ada42.jpeg",
+    "static/media/BYU_April_2020.jpg": "/wedding_site/static/media/BYU_April_2020.18d48396f69a963e533c.jpg",
+    "static/media/Zion_Fed_2020.jpg": "/wedding_site/static/media/Zion_Fed_2020.51d0b9ec7d187f2bb0be.jpg",
+    "static/media/Chicago_Nov_2021.jpg": "/wedding_site/static/media/Chicago_Nov_2021.b9ef13dc12fa4e4b64f2.jpg",
+    "static/media/George_July_2021.jpg": "/wedding_site/static/media/George_July_2021.665bbdff04cd19a0ed2b.jpg",
+    "static/media/Zhihao_Tina-Layingdown.jpeg": "/wedding_site/static/media/Zhihao_Tina-Layingdown.ca30e55bb1f27446ceed.jpeg",
+    "static/media/footer.jpeg": "/wedding_site/static/media/footer.142270f5fe8a1b86df74.jpeg",
+    "static/media/Nauvoo_Aug_2020.jpg": "/wedding_site/static/media/Nauvoo_Aug_2020.10bb605a366b607cf9c3.jpg",
+    "static/media/Bryce_Jan_2020.jpg": "/wedding_site/static/media/Bryce_Jan_2020.5d04dc3c9077fbb4f82c.jpg",
+    "static/media/Provo_Dec_2020.jpg": "/wedding_site/static/media/Provo_Dec_2020.73beb3ab25f3c5db8b20.jpg",
+    "static/media/Lafayette_June_2021.jpeg": "/wedding_site/static/media/Lafayette_June_2021.4ad17d3a876a3d1c7dce.jpeg",
+    "static/media/Zhihao_Tina-4.jpg": "/wedding_site/static/media/Zhihao_Tina-4.9f6e8c3509eac6354139.jpg",
+    "static/media/Surf_Jan_2022.jpg": "/wedding_site/static/media/Surf_Jan_2022.d6a12c28b37bfe0c01b8.jpg",
+    "static/media/Zhihao_Tina-5.jpg": "/wedding_site/static/media/Zhihao_Tina-5.1a1ae8def74d64fb509c.jpg",
+    "static/media/Zhihao_Tina-3.jpg": "/wedding_site/static/media/Zhihao_Tina-3.b694350b90ff83ee52d2.jpg",
+    "static/media/Zhihao_Tina-2.jpg": "/wedding_site/static/media/Zhihao_Tina-2.7e0f169f04f151a9803c.jpg",
+    "static/media/Zhihao_Tina-7.jpg": "/wedding_site/static/media/Zhihao_Tina-7.41668275ae7a8271d828.jpg",
+    "static/media/Zhihao_Tina-6.jpg": "/wedding_site/static/media/Zhihao_Tina-6.028d0425cd12f2d810f6.jpg",
+    "static/media/available_at_amazon_logo.png": "/wedding_site/static/media/available_at_amazon_logo.51178484e875a3ac5e07.png",
+    "index.html": "/wedding_site/index.html",
+    "main.9bf98bfd.css.map": "/wedding_site/static/css/main.9bf98bfd.css.map",
+    "main.96697e63.js.map": "/wedding_site/static/js/main.96697e63.js.map",
+    "787.b444d40d.chunk.js.map": "/wedding_site/static/js/787.b444d40d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9bf98bfd.css",
+    "static/js/main.96697e63.js"
+  ]
+}
